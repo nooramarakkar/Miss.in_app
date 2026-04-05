@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        Theme.App.Starting — shown by the OS during cold start.
+        Background is Matte Charcoal (#121212) which exactly matches the
+        app's MatteCharcoal surface color to produce a seamless "cut" with
+        no white/navy flash when Compose draws its first frame.
+    -->
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <!-- Matte Charcoal background — synced with app theme -->
+        <item name="windowSplashScreenBackground">#121212</item>
+
+        <!-- centred logo PNG as the splash icon.
+             Android 12+ insets this inside a 240dp circle; the PNG already
+             has 40% padding baked in so the logo is never clipped. -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_icon</item>
+
+        <!-- Hand off to the real app theme immediately after auth check -->
+        <item name="postSplashScreenTheme">@style/Theme.MissInTheme</item>
+    </style>
+
+    <style name="Theme.MissInTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- Synced to Matte Charcoal to prevent any colour flash -->
+        <item name="android:windowBackground">#121212</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+</resources>

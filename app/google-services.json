@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "136755804688",
+    "project_id": "missinapp",
+    "storage_bucket": "missinapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136755804688:android:4d7163dd725e34461b2895",
+        "android_client_info": {
+          "package_name": "com.missin.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsBW1e0gMf643VUtPcYt3YkUWJ2SHks_k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
