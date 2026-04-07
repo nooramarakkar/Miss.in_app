@@ -1,4 +1,3 @@
-# 🔐 Secrets (NEVER commit)
 local.properties
 
 # Gradle
@@ -19,3 +18,5 @@ build/
 # OS junk
 .DS_Store
 Thumbs.db
+
+**/google-services.json
