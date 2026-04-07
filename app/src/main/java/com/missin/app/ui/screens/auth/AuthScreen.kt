@@ -86,7 +86,7 @@ fun AuthScreen(
                 Text(
                     text = "miss.in",
                     style = MaterialTheme.typography.displayLarge.copy(fontWeight = FontWeight.Bold),
-                    color = boneWhite,
+                    color = Color.Black,
                     modifier = Modifier.padding(bottom = 8.dp)
                 )
                 Text(
